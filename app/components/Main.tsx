@@ -1,6 +1,5 @@
-import * as React from 'react';
-import { Nav, INavProps } from 'office-ui-fabric-react/lib/Nav';
-
+import * as React from "react";
+import { Nav, INavProps } from "office-ui-fabric-react/lib/Nav";
 
 export class Main extends React.Component<any, any> {
   constructor(props: INavProps) {
@@ -16,53 +15,62 @@ export class Main extends React.Component<any, any> {
             {
               links: [
                 {
-                  name: 'Home',
-                  url: 'http://example.com',
+                  name: "Home",
+                  url: "http://example.com",
                   links: [
                     {
-                      name: 'Activity',
-                      url: 'http://msn.com',
-                      key: 'key1'
+                      name: "Activity",
+                      url: "http://msn.com",
+                      key: "key1"
                     },
                     {
-                      name: 'News',
-                      url: 'http://msn.com',
-                      key: 'key2'
+                      name: "News",
+                      url: "http://msn.com",
+                      key: "key2"
                     }
                   ],
                   isExpanded: true
                 },
-                { name: 'Documents', url: 'http://example.com', key: 'key3', isExpanded: true },
-                { name: 'Pages', url: 'http://msn.com', key: 'key4' },
-                { name: 'Notebook', url: 'http://msn.com', key: 'key5' },
-                { name: 'Long Name Test for ellipse', url: 'http://msn.com', key: 'key6' },
                 {
-                  name: 'Edit',
-                  url: 'http://cnn.com',
-                  onClick: this._onClickHandler2,
-                  icon: 'Edit',
-                  key: 'key8'
+                  name: "Documents",
+                  url: "http://example.com",
+                  key: "key3",
+                  isExpanded: true
+                },
+                { name: "Pages", url: "http://msn.com", key: "key4" },
+                { name: "Notebook", url: "http://msn.com", key: "key5" },
+                {
+                  name: "Long Name Test for ellipse",
+                  url: "http://msn.com",
+                  key: "key6"
                 },
                 {
-                  name: 'Delete',
-                  url: 'http://cnn.com',
+                  name: "Edit",
+                  url: "http://cnn.com",
                   onClick: this._onClickHandler2,
-                  iconProps: { iconName: 'Delete' },
-                  key: 'key9'
+                  icon: "Edit",
+                  key: "key8"
+                },
+                {
+                  name: "Delete",
+                  url: "http://cnn.com",
+                  onClick: this._onClickHandler2,
+                  iconProps: { iconName: "Delete" },
+                  key: "key9"
                 }
               ]
             }
           ]}
-          expandedStateText={'expanded'}
-          collapsedStateText={'collapsed'}
-          selectedKey={'key3'}
+          expandedStateText={"expanded"}
+          collapsedStateText={"collapsed"}  
+          selectedKey={"key3"}
         />
       </div>
     );
   }
 
   private _onClickHandler(e: React.MouseEvent<HTMLElement>): false {
-    alert('test');
+    alert("test");
     return false;
   }
 
