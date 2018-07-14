@@ -1,18 +1,14 @@
 import * as React from "react";
-import { render } from "react-dom";
+import * as ReactDOM from "react-dom";
 
-import "./app.css";
+import { initializeIcons } from 'office-ui-fabric-react/lib/Icons';
 
-import { Navigation } from "./components/Navigation";
-import { CoreExample } from "./components/CoreExample";
-import { SelectExample } from './components/SelectExample';
+import { Main } from './components/Main';
+
+initializeIcons();
 
 const App = () => (
-  <div>
-    <Navigation />
-    <CoreExample />
-    <SelectExample />
-  </div>
+  <Main />
 );
 
-render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
