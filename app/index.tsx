@@ -1,8 +1,18 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom";
-import { Hello } from "./components/Hello";
+import { render } from "react-dom";
 
-ReactDOM.render(
-  <Hello compiler="TypeScript" framework="React" />,
-  document.getElementById("example")
+import "./app.css";
+
+import { Navigation } from "./components/Navigation";
+import { CoreExample } from "./components/CoreExample";
+import { SelectExample } from './components/SelectExample';
+
+const App = () => (
+  <div>
+    <Navigation />
+    <CoreExample />
+    <SelectExample />
+  </div>
 );
+
+render(<App />, document.getElementById("root"));
