@@ -1,0 +1,13 @@
+{
+    "name": "ROOT NAME",
+    "id": "0",
+    "children": [{
+        "name": "Jan 2018",
+        "id": "201801",
+        "children": [{
+            "name": "Photo 01 Jan 2018",
+            "id": "4281a667-90a3-4902-9c6e-705369995ca2.jpg",
+            "hash": "10de536c-3c81-43a6-8279-a20b24a15303"
+        }]
+    }]
+}
